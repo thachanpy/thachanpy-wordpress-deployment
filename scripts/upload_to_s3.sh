@@ -11,6 +11,8 @@ if [[ $backup_folder == "" ]]; then
     exit 1
 fi
 
+/data/thachanpy/thachanpy-wordpress-deployment/scripts/backup.sh -o $backup_folder
+
 for entry in "$backup_folder"/*
 do 
     if [[ $entry == *.tar ]]; then
